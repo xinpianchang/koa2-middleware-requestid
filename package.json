@@ -1,6 +1,6 @@
 {
   "name": "@newstudios/koa2-middleware-requestid",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "description": "A middleware that generates a unique Request ID for every incoming HTTP request in Koa2.",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
