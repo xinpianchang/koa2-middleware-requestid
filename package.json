@@ -1,6 +1,6 @@
 {
   "name": "@newstudios/koa2-middleware-requestid",
-  "version": "2.0.0",
+  "version": "2.1.0",
   "description": "A middleware that generates a unique Request ID for every incoming HTTP request in Koa2.",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
@@ -8,7 +8,8 @@
     "build": "tsc",
     "dev": "tsc -w",
     "example": "tsc & node example/server.js",
-    "test": "jest --coverage --env=node"
+    "test": "jest --coverage --env=node",
+    "prepublishOnly": "rimraf dist && tsc"
   },
   "repository": {
     "type": "git",
@@ -22,7 +23,8 @@
   "license": "MIT",
   "dependencies": {
     "bson": "^4.0.4",
-    "uuid": "^7.0.3"
+    "uuid": "^7.0.3",
+    "rimraf": "3.0.2"
   },
   "devDependencies": {
     "@types/bson": "^4.0.2",
